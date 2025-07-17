@@ -6,29 +6,22 @@
   <title>Prakhar Gupta – Fullstack Developer</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-    header { background-color: #ffffff; padding: 60px 0; text-align: center; }
-    header h1 { color: #007bff; }
-    nav a { color: #007bff !important; }
-    .nav-link.active { font-weight: bold; }
-    .section-title { color: #007bff; margin-bottom: 20px; }
-    section { padding: 60px 0; }
-    #contact input, #contact textarea { margin-bottom: 15px; }
-    img.profile-img { border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 3px solid #007bff; }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand text-primary" href="#">Prakhar</a>
+    <a class="navbar-brand text-primary fw-bold" href="#home">Prakhar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
@@ -36,46 +29,120 @@
   </div>
 </nav>
 
-<header id="home">
-  <img src="assets/img/profile.jpg" alt="Profile" class="profile-img mb-3" />
-  <h1>Prakhar Gupta</h1>
-  <p class="text-muted">Fullstack Developer (Frontend + Backend)</p>
+<header id="home" class="hero-section d-flex align-items-center justify-content-center flex-column text-center" style="min-height: 100vh; background: linear-gradient(135deg, #e3f0ff 0%, #f9f9f9 100%);">
+  <img src="assets/img/profile.jpg" alt="Profile" class="profile-img mb-4" data-aos="fade-down" />
+  <h1 class="display-4 fw-bold mb-2" data-aos="fade-up">Hi, I'm <span class="text-primary">Prakhar Gupta</span></h1>
+  <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100"><span id="typed-text"></span></h2>
+  <a href="#about" class="btn btn-outline-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="200">Learn More</a>
+  <a href="assets/Prakhar_Gupta_CV.pdf" class="btn btn-primary btn-lg mt-3 ms-2" data-aos="zoom-in" data-aos-delay="300" download>Download CV</a>
 </header>
 
-<section id="projects" class="container text-center">
-  <h2 class="section-title">Projects</h2>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <h5>EcommApp</h5>
-      <p>Microservice backend using Java, Spring Boot, MySQL</p>
-      <a href="https://github.com/prakhar603/EcommApp" target="_blank">View on GitHub</a>
+<section id="about" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title mb-4">About Me</h2>
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img src="assets/img/profile.jpg" alt="Profile" class="profile-img-lg" />
     </div>
-    <div class="col-md-4 mb-4">
-      <h5>Inventory Management System</h5>
-      <p>CRUD system for inventory with price filters</p>
-      <a href="https://github.com/prakhar603/Inventory-Management-System" target="_blank">View on GitHub</a>
-    </div>
-    <div class="col-md-4 mb-4">
-      <h5>JSON Escaper Extension</h5>
-      <p>Chrome extension to clean JSON/proto strings</p>
-      <a href="https://github.com/prakhar603/json-escaper-extension" target="_blank">View on GitHub</a>
+    <div class="col-md-8">
+      <p class="lead">I'm a passionate Fullstack Developer with experience in building scalable web applications. I love working with both frontend and backend technologies, and I'm always eager to learn new things and take on new challenges.</p>
+      <ul class="list-unstyled mt-3">
+        <li><strong>Email:</strong> prakhar@example.com</li>
+        <li><strong>Location:</strong> India</li>
+        <li><strong>Specialties:</strong> Java, Spring Boot, MySQL, React, Node.js</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="contact" class="container text-center">
-  <h2 class="section-title">Contact</h2>
+<section id="education" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title mb-4">Education</h2>
+  <div class="timeline">
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h5>Master of Technology in Computer Science</h5>
+        <p class="mb-1">IIT Delhi</p>
+        <span class="text-muted">2022 - 2024</span>
+      </div>
+    </div>
+    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h5>Bachelor of Engineering in Information Technology</h5>
+        <p class="mb-1">NIT Trichy</p>
+        <span class="text-muted">2018 - 2022</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title mb-4">Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm project-card" data-aos="zoom-in">
+        <div class="card-body">
+          <h5 class="card-title">EcommApp</h5>
+          <p class="card-text">Microservice backend using Java, Spring Boot, MySQL</p>
+          <a href="https://github.com/prakhar603/EcommApp" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm project-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card-body">
+          <h5 class="card-title">Inventory Management System</h5>
+          <p class="card-text">CRUD system for inventory with price filters</p>
+          <a href="https://github.com/prakhar603/Inventory-Management-System" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm project-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card-body">
+          <h5 class="card-title">JSON Escaper Extension</h5>
+          <p class="card-text">Chrome extension to clean JSON/proto strings</p>
+          <a href="https://github.com/prakhar603/json-escaper-extension" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container py-5" data-aos="fade-up">
+  <h2 class="section-title mb-4">Contact</h2>
   <form action="https://formspree.io/f/mnqeowjp" method="POST" class="mx-auto" style="max-width: 500px;">
-    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-    <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
-    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+    <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+    <input type="email" name="_replyto" class="form-control mb-3" placeholder="Your Email" required>
+    <textarea name="message" class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
     <button type="submit" class="btn btn-primary w-100">Send Message</button>
   </form>
 </section>
 
+<footer class="text-center py-4 bg-light mt-5">
+  <div class="container">
+    <span class="text-muted">&copy; 2024 Prakhar Gupta. All rights reserved.</span>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  AOS.init();
+  // Typed.js for animated intro text
+  var typed = new Typed('#typed-text', {
+    strings: [
+      'Fullstack Developer',
+      'Java & Spring Boot Enthusiast',
+      'Lifelong Learner',
+      'Open Source Contributor'
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
 </body>
 </html>
